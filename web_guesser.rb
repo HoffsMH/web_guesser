@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/reloader'
-ran = Random.new
-x = ran.rand(100)
 
+erb :index, :locals => {:number => number}
+num = 100
 get '/' do
-  "The secret number is #{x}"
+  erb :index
 end
 
