@@ -1,9 +1,17 @@
 
 <html>
-  <head></head>
+  <head>
+    <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+  </head>
   <body>
-    <p>
-      The SECRET NUMBER is <%= number %>
-    </p>
+    <div class="game_div">
+      <p>
+      <%= message %>
+      </p>
+      <form>
+        <input type='text' name='guess' />
+        <input type='submit' value='Guess!' />
+      </form>
+    </div>
   </body>
 </html>
